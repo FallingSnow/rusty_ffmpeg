@@ -17,7 +17,7 @@ static LIBS: Lazy<[&str; 7]> = Lazy::new(|| {
 });
 
 /// Whitelist of the headers we want to generate bindings
-static HEADERS: Lazy<[&str; 62]> = Lazy::new(|| {
+static HEADERS: Lazy<[&str; 63]> = Lazy::new(|| {
     [
         "libavcodec/avcodec.h",
         "libavcodec/avfft.h",
@@ -53,6 +53,7 @@ static HEADERS: Lazy<[&str; 62]> = Lazy::new(|| {
         "libavutil/frame.h",
         "libavutil/hash.h",
         "libavutil/hmac.h",
+        "libavutil/hwcontext_drm.h",
         "libavutil/imgutils.h",
         "libavutil/lfg.h",
         "libavutil/log.h",
